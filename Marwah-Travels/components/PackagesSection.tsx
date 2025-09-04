@@ -176,13 +176,13 @@ export default function PackagesSection() {
                                       }}
 
                                     className="hover:border-white hover:border-2 hover:shadow-white hover:shadow-xl" sx={{ backgroundColor: 'white', borderRadius: 2 }} elevation={4}>
-                                        <img src={FILE_BASE_URL +( pack.package_image ?? "/kaba_image.jpg")} width={720} height={300} alt={"logo"} className="w-full h-36" />
+                                        <img src={FILE_BASE_URL +( pack.package_image ?? "/kaba_image.jpg")} width={720} height={300} alt={`${pack.name} Umrah package image`} className="w-full h-36" />
 
                                         <div className="p-4 hover:cursor-pointer ">
                                             <div className="flex flex-col">
-                                                <h1 className='text-bold text-[16px] text-black pt-2 font-bold'>
+                                                <h3 className='text-bold text-[16px] text-black pt-2 font-bold'>
                                                     {pack.name}
-                                                </h1>
+                                                </h3>
                                                 <span className="mt-1">
                                                     <strong className="text-green-600 text-xl">${pack.price_quad}/-</strong> Per Person
                                                 </span>

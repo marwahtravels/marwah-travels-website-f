@@ -134,7 +134,7 @@ export default function PackageDetail() {
                                 src={FILE_BASE_URL + (packageToView.package_image ?? "")}
                                 width={720}
                                 height={300}
-                                alt={"logo"}
+                                alt={`${packageToView.name} package cover image`}
                                 className="w-full cursor-pointer"
                             />
                         </Slide>
@@ -146,9 +146,9 @@ export default function PackageDetail() {
                         <div className="pt-4 sm:px-10 px-4 hover:cursor-pointer ">
                             <div className="flex flex-col text-white">
                                 <Slide>
-                                    <h1 className="text-bold text-[34px] text-white pt-1 font-bold">
+                                    <h2 className="text-bold text-[34px] text-white pt-1 font-bold">
                                        {packageToView.name}
-                                    </h1>
+                                    </h2>
                                 </Slide>
                                 
                                 <Slide direction="right">
@@ -222,9 +222,8 @@ export default function PackageDetail() {
                                                     className="rounded-xl"
                                                     src={
                                                         FILE_BASE_URL + (packageToView.hotel_makkah_image ?? "")
-                            
                                                     }
-                                                    alt="Data Image"
+                                                    alt={`${packageToView.hotel_makkah_name} hotel in Makkah`}
                                                     width={400}
                                                     height={300}
                                                 />
@@ -241,7 +240,7 @@ export default function PackageDetail() {
                                                     src={
                                                         FILE_BASE_URL + (packageToView.hotel_madina_image ?? "")
                                                     }
-                                                    alt="Data Image"
+                                                    alt={`${packageToView.hotel_madina_name} hotel in Madinah`}
                                                     width={400}
                                                     height={300}
                                                 />
@@ -288,7 +287,7 @@ export default function PackageDetail() {
                                                         FILE_BASE_URL + (packageToView.trans_image ?? "")
                                                         
                                                     }
-                                                    alt="Data Image"
+                                                    alt={`${packageToView.trans_title} transportation image`}
                                                     width={400}
                                                     height={300}
                                                 />
@@ -307,7 +306,7 @@ export default function PackageDetail() {
                                                         FILE_BASE_URL + (packageToView.visa_image ?? "")
                                                        
                                                     }
-                                                    alt="Data Image"
+                                                    alt={`${packageToView.visa_title} visa service image`}
                                                     width={400}
                                                     height={300}
                                                 />

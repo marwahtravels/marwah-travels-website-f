@@ -18,7 +18,7 @@ const Hero = () => {
           <div >
 
             <Space h={120} />
-            <h1 className="font-bold sm:text-[22px] text-[18px] lg:bold-12 text-white">Welcome to Marwah Travels Umrah - Your Official Agent To Makkah and Madina</h1>
+            <h1 className="font-bold sm:text-[22px] text-[18px] lg:bold-12 text-white">Best Umrah Packages | Group Umrah Packages - Marwah Travels Umrah</h1>
             <p className="regular-16 sm:mt-3 mt-1
               text-slate-200 xl:max-w-[520px]">
               {

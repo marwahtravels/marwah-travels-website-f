@@ -1,13 +1,12 @@
 'use client'
 
-
+import React, { ReactNode } from 'react';
 import './globals.css'
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FloatingComponents from '@/components/FloatingComponents';
 import Space from '@/components/Space';
-
-import { ReactNode } from 'react';
+import Breadcrumb from '@/components/Breadcrumb';
 
 
 export function getUserFrame(child: any) {
@@ -22,6 +21,7 @@ export function getUserFrame(child: any) {
     backgroundPosition: 'center'}}
     ></div>
     <Navbar />
+    <Breadcrumb />
 
     <main className="relative overflow-hidden">
 
@@ -54,26 +54,32 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <title>Marwah Travels - Premium Umrah Packages | Makkah & Madina Tours</title>
-        <meta name="description" content="Discover premium Umrah packages with Marwah Travels. Professional Umrah services including visa, flights, hotels in Makkah & Madina. Book your spiritual journey today." />
-        <meta name="keywords" content="Umrah packages, Umrah travel, Makkah tours, Madina tours, Umrah visa, Umrah flights, Umrah hotels, Islamic travel, religious tourism" />
+        <title>Best Umrah Packages | Group Umrah Packages - Marwah Travels Umrah</title>
+        <meta name="description" content="Plan your spiritual journey with Marwah Travels Umrah. Luxury Umrah packages, real-time trip tracking, 24/7 support, flights, accommodation & visa assistance. Contact us now" />
+        <meta name="keywords" content="Umrah packages, Umrah travel, Makkah tours, Madina tours, Umrah visa, Umrah flights, Umrah hotels, Islamic travel, religious tourism, group umrah, luxury umrah" />
         <meta name="author" content="Marwah Travels" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://www.mtumrah.com/" />
+        
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.mtumrah.com/" />
-        <meta property="og:title" content="Marwah Travels - Premium Umrah Packages" />
-        <meta property="og:description" content="Professional Umrah services including visa, flights, hotels in Makkah & Madina. Book your spiritual journey today." />
+        <meta property="og:title" content="Best Umrah Packages | Group Umrah Packages - Marwah Travels Umrah" />
+        <meta property="og:description" content="Plan your spiritual journey with Marwah Travels Umrah. Luxury Umrah packages, real-time trip tracking, 24/7 support, flights, accommodation & visa assistance. Contact us now" />
         <meta property="og:image" content="https://www.mtumrah.com/logo2.png" />
+        <meta property="og:site_name" content="Marwah Travels Umrah" />
+        <meta property="og:locale" content="en_US" />
         
         {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://www.mtumrah.com/" />
-        <meta property="twitter:title" content="Marwah Travels - Premium Umrah Packages" />
-        <meta property="twitter:description" content="Professional Umrah services including visa, flights, hotels in Makkah & Madina." />
-        <meta property="twitter:image" content="https://www.mtumrah.com/logo2.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://www.mtumrah.com/" />
+        <meta name="twitter:title" content="Best Umrah Packages | Group Umrah Packages - Marwah Travels Umrah" />
+        <meta name="twitter:description" content="Plan your spiritual journey with Marwah Travels Umrah. Luxury Umrah packages, real-time trip tracking, 24/7 support, flights, accommodation & visa assistance. Contact us now" />
+        <meta name="twitter:image" content="https://www.mtumrah.com/logo2.png" />
+        <meta name="twitter:site" content="@marwahtravels" />
         
         {/* Favicon */}
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -83,6 +89,28 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://database.mtumrah.com" />
+        
+        {/* Google Analytics */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-MJ6Y9357FT"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-MJ6Y9357FT', {
+                page_title: document.title,
+                page_location: window.location.href
+              });
+            `,
+          }}
+        />
+        
+        {/* Google Search Console Verification */}
+        <meta name="google-site-verification" content="JQwE2Zi9f3MQTxWtjiSwENXRM2xbpdcdLuxeSRD_wjo" />
         
         {/* Structured Data */}
         <script

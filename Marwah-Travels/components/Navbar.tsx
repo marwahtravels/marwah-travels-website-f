@@ -44,6 +44,13 @@ const Navbar = () => {
                 />
       </a>
 </div>
+      <div className="hidden lg:flex items-center gap-3 ms-auto">
+        <Link href="https://www.facebook.com" aria-label="Facebook" target="_blank"><img src="/facebook.svg" alt="Facebook" width={22} height={22} /></Link>
+        <Link href="https://www.instagram.com" aria-label="Instagram" target="_blank"><img src="/instagram.svg" alt="Instagram" width={22} height={22} /></Link>
+        <Link href="https://twitter.com" aria-label="Twitter" target="_blank"><img src="/twitter.svg" alt="Twitter" width={22} height={22} /></Link>
+        <Link href="https://www.youtube.com" aria-label="YouTube" target="_blank"><img src="/youtube.svg" alt="YouTube" width={22} height={22} /></Link>
+      </div>
+
       {/* <div className="lg:flexCenter hidden">
         <ul className="regular-14 flex gap-4 text-white me-16">
           {SOCIALS.links.map((link) => (

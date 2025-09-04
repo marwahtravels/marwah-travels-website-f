@@ -15,15 +15,15 @@ const Footer = () => {
           Award-Winning Excellence
         </h2>
         <div className='flexBetween sm:mx-40 mt-5 sm:mb-40 mb-10'>
-          <img  className='mx-2 w-24 h-28' src='/awds/img1.webp' alt="Award 1" loading="lazy" />
-          <img className='mx-2 w-24 h-28' src='/awds/img2.webp' alt="Award 2" loading="lazy" />
-          <img  className='mx-2 w-24 h-28' src='/awds/img3.webp' alt="Award 3" loading="lazy" />
+          <img  className='mx-2 w-24 h-28' src='/awds/img1.webp' alt="Marwah Travels award 1 - excellence recognition" loading="lazy" />
+          <img className='mx-2 w-24 h-28' src='/awds/img2.webp' alt="Marwah Travels award 2 - service quality" loading="lazy" />
+          <img  className='mx-2 w-24 h-28' src='/awds/img3.webp' alt="Marwah Travels award 3 - trusted travel services" loading="lazy" />
         </div>
 
 
         <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
           <Link href="/">
-            <img src="/logo2.png" alt="logo" width={120} height={19} />
+            <img src="/logo2.png" alt="Marwah Travels Umrah logo" width={120} height={19} />
             {/* <span className="mt-10 text-white text-3xl font-bold">Marwah Travels</span> */}
           </Link>
 
@@ -56,6 +56,25 @@ const Footer = () => {
                     </p>
                   </Link>
                 ))}
+              </FooterColumn>
+            </div>
+
+            <div className="flex flex-col gap-5">
+              <FooterColumn title="Follow Us">
+                <div className="flex gap-4">
+                  <Link href="https://www.facebook.com" aria-label="Facebook" target="_blank" className="hover:opacity-80">
+                    <img src="/facebook.svg" alt="Facebook" width={24} height={24} />
+                  </Link>
+                  <Link href="https://www.instagram.com" aria-label="Instagram" target="_blank" className="hover:opacity-80">
+                    <img src="/instagram.svg" alt="Instagram" width={24} height={24} />
+                  </Link>
+                  <Link href="https://twitter.com" aria-label="Twitter" target="_blank" className="hover:opacity-80">
+                    <img src="/twitter.svg" alt="Twitter" width={24} height={24} />
+                  </Link>
+                  <Link href="https://www.youtube.com" aria-label="YouTube" target="_blank" className="hover:opacity-80">
+                    <img src="/youtube.svg" alt="YouTube" width={24} height={24} />
+                  </Link>
+                </div>
               </FooterColumn>
             </div>
 
