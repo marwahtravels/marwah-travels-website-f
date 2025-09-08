@@ -7,8 +7,6 @@ Sitemap: https://www.mtumrah.com/sitemap.xml
 # Disallow admin areas
 Disallow: /admin/
 Disallow: /api/
-Disallow: /_next/
-Disallow: /static/
 
 # Allow important pages
 Allow: /

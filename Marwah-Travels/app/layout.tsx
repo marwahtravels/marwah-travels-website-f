@@ -61,8 +61,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
-        {/* Canonical URL */}
-        <link rel="canonical" href="https://www.mtumrah.com/" />
+        {/* Canonical URL is set per-page to avoid duplicates */}
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />

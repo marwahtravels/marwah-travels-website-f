@@ -11,6 +11,7 @@ import PackagesSection from "@/components/PackagesSection";
 import {  Dialog } from "@mui/material";
 import { useEffect, useState } from "react";
 import { getUserFrame } from "./layout";
+import Head from "next/head";
 
 export default function Home() {
 
@@ -28,27 +29,36 @@ export default function Home() {
   }
 
   useEffect(()=>{startTimer()},[]);
-  return getUserFrame(
-    <div >
+  return (
+    <>
+      <Head>
+        <link rel="canonical" href="https://www.mtumrah.com/" />
+        <meta property="og:url" content="https://www.mtumrah.com/" />
+        <meta name="twitter:url" content="https://www.mtumrah.com/" />
+      </Head>
+      {getUserFrame(
+        <div >
 
-      <Hero />
+          <Hero />
 
-      <Dialog PaperProps={{ sx: { background: 'rgba(0,0,0,0)' } }} open={inquiryVisible}>
-        <IquerySection isDialog={true} onDismiss={startTimer} />
-
-
-      </Dialog>
-      
-      <IquerySection isDialog={false} onDismiss={startTimer} />
-
-      <CustomPackageSection />
-
-      <PackagesSection />
-      <Features  />
-      <OurTestimonials />
-      <OurPartners />
+          <Dialog PaperProps={{ sx: { background: 'rgba(0,0,0,0)' } }} open={inquiryVisible}>
+            <IquerySection isDialog={true} onDismiss={startTimer} />
 
 
-    </div>
+          </Dialog>
+          
+          <IquerySection isDialog={false} onDismiss={startTimer} />
+
+          <CustomPackageSection />
+
+          <PackagesSection />
+          <Features  />
+          <OurTestimonials />
+          <OurPartners />
+
+
+        </div>
+      )}
+    </>
   )
 }
